@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunday App — Gopal Ojha</title>
+    <title>Learn App — Gopal Ojha</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -19,23 +19,19 @@
         </nav>
 
         <header>
-            <h1>Sunday App</h1>
+            <h1>Learn App</h1>
             <p class="project-tagline">
-                A meme browser that actively hates you during the work week.
+                Zaya's core learning platform for the classcloud.
             </p>
 
             <div class="meta-grid">
                 <div class="meta-item">
-                    <label>Event</label>
-                    <p>Weekend Hackathon</p>
+                    <label>Role</label>
+                    <p>Re-designed and co-developed</p>
                 </div>
                 <div class="meta-item">
-                    <label>Stack</label>
-                    <p>React Native, Reddit API</p>
-                </div>
-                <div class="meta-item">
-                    <label>Timeline</label>
-                    <p>48 Hours</p>
+                    <label>Company</label>
+                    <p>Zaya</p>
                 </div>
             </div>
         </header>
@@ -43,64 +39,32 @@
         <main>
             <section class="content-block">
                 <p>
-                    We all doom-scroll, but doing it on a Tuesday morning is a
-                    productivity killer. The Sunday App is a meme browser designed with
-                    a single constraint:
-                    <strong>it only works on weekends.</strong>
+                    Learn is Zaya's core learning platform for the classcloud. Had redesigned and developed some of the
+                    key aspect of the app. Few of the screen shot of how preview of how course list look like, are given
+                    below.
                 </p>
                 <p>
-                    I built a custom image browser to cycle through top posts from
-                    Reddit's humor subreddits, but wrapped the entire experience in a
-                    conditional logic gate based on the user's system time.
+                    <strong>Credit :</strong> Re-designed and co-developed
                 </p>
             </section>
 
             <div class="media-group">
                 <div class="collage-grid">
-                    <div class="collage-item vertical" onclick="openOverlay(0)">
-                        <img src="../assets/Splash.png" alt="Splash Screen" />
+                    <!-- Using placeholder images as specific screenshots were not provided, 
+                         reusing assets or placeholders for now to match structure -->
+                    <div class="collage-item horizontal" onclick="openOverlay(0)">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/learnapp%2F1.png?alt=media&token=e07bf453-69cc-4802-a810-4c4fd237d806"
+                            alt="Learn App Course List" />
                     </div>
-                    <div class="collage-item vertical" onclick="openOverlay(1)">
-                        <img src="../assets/Booze meter.png" alt="Booze Meter" />
-                    </div>
-                    <div class="collage-item vertical" onclick="openOverlay(2)">
-                        <img src="../assets/Find Booze.png" alt="Find Booze" />
-                    </div>
-                    <div class="collage-item vertical" onclick="openOverlay(3)">
-                        <img src="../assets/Notification.png" alt="Notification" />
+                    <div class="collage-item horizontal" onclick="openOverlay(0)">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/curateapp%2F1.png?alt=media&token=d5fc8680-d5a7-4914-8e73-15b65d51f4fd"
+                            alt="Curate App lesson plan" />
                     </div>
                 </div>
                 <span class="caption">
-                    Click any screenshot to view the gallery in full screen.
+                    Click screenshot to view in full screen.
                 </span>
             </div>
-
-            <section class="content-block">
-                <p>
-                    If you attempt to open the app between Monday and Friday, the app
-                    doesn't just block you—it abuses you. The screen turns red and
-                    displays randomly generated insults questioning your work ethic and
-                    life choices.
-                </p>
-            </section>
-
-            <div class="media-group">
-                <div class="media-container">
-                    <img src="../assets/Weekday.png" alt="Abuse Screen Example" />
-                </div>
-                <span class="caption">
-                    The "Get Back to Work" state triggers automatically on weekdays.
-                </span>
-            </div>
-
-            <section class="content-block">
-                <p>
-                    The final feature is the "Sunday Scaries" detector. If you are
-                    browsing the app past 10:00 PM on a Sunday, the UI shifts to a
-                    sobering dark mode. It interrupts the meme feed to remind you that
-                    tomorrow is Monday and suggests you might have had enough to drink.
-                </p>
-            </section>
         </main>
 
         <footer>
@@ -126,10 +90,8 @@
     <script>
         // Image Data Configuration
         const images = [
-            "../assets/Splash.png",
-            "../assets/Booze meter.png",
-            "../assets/Find Booze.png",
-            "../assets/Notification.png",
+            "https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/learnapp%2F1.png?alt=media&token=e07bf453-69cc-4802-a810-4c4fd237d806",
+            "https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/curateapp%2F1.png?alt=media&token=d5fc8680-d5a7-4914-8e73-15b65d51f4fd"
         ];
 
         let currentIndex = 0;

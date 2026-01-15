@@ -191,6 +191,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+    margin-bottom: 16px;
 }
 
 .collage-item {
@@ -198,9 +199,16 @@ footer {
     overflow: hidden;
     border-radius: 8px;
     background: #f0f0f0;
-    aspect-ratio: 9/16;
     border: 1px solid var(--border);
     cursor: pointer;
+}
+
+.collage-item.vertical {
+    aspect-ratio: 9/16;
+}
+
+.collage-item.horizontal {
+    aspect-ratio: 16/9;
 }
 
 .collage-item img {
