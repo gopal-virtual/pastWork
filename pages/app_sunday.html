@@ -57,17 +57,17 @@
 
             <div class="media-group">
                 <div class="collage-grid">
-                    <div class="collage-item vertical" onclick="openOverlay(0)">
-                        <img src="../assets/Splash.png" alt="Splash Screen" />
+                    <div class="collage-item vertical">
+                        <img src="../assets/splash.png" alt="Splash Screen" />
                     </div>
-                    <div class="collage-item vertical" onclick="openOverlay(1)">
-                        <img src="../assets/Booze meter.png" alt="Booze Meter" />
+                    <div class="collage-item vertical">
+                        <img src="../assets/booze-meter.png" alt="Booze Meter" />
                     </div>
-                    <div class="collage-item vertical" onclick="openOverlay(2)">
-                        <img src="../assets/Find Booze.png" alt="Find Booze" />
+                    <div class="collage-item vertical">
+                        <img src="../assets/final-booze.png" alt="Find Booze" />
                     </div>
-                    <div class="collage-item vertical" onclick="openOverlay(3)">
-                        <img src="../assets/Notification.png" alt="Notification" />
+                    <div class="collage-item vertical">
+                        <img src="../assets/notification.png" alt="Notification" />
                     </div>
                 </div>
                 <span class="caption">
@@ -108,78 +108,10 @@
         </footer>
     </div>
 
-    <div class="overlay" id="imageOverlay">
-        <button class="overlay-btn close-btn" onclick="closeOverlay()">×</button>
-        <button class="overlay-btn nav-btn prev-btn" onclick="changeSlide(-1)">
-            ‹
-        </button>
-
-        <div class="overlay-content">
-            <img src="" alt="Gallery View" class="overlay-img" id="overlayImage" />
-        </div>
-
-        <button class="overlay-btn nav-btn next-btn" onclick="changeSlide(1)">
-            ›
-        </button>
-    </div>
-
+    <script src="../assets/carousel.js"></script>
     <script>
-        // Image Data Configuration
-        const images = [
-            "../assets/Splash.png",
-            "../assets/Booze meter.png",
-            "../assets/Find Booze.png",
-            "../assets/Notification.png",
-        ];
-
-        let currentIndex = 0;
-        const overlay = document.getElementById("imageOverlay");
-        const overlayImage = document.getElementById("overlayImage");
-        const body = document.body;
-
-        function openOverlay(index) {
-            currentIndex = index;
-            updateImage();
-            overlay.classList.add("active");
-            body.style.overflow = "hidden"; // Prevent background scrolling
-        }
-
-        function closeOverlay() {
-            overlay.classList.remove("active");
-            body.style.overflow = ""; // Restore scrolling
-        }
-
-        function changeSlide(direction) {
-            currentIndex += direction;
-
-            // Loop logic
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            } else if (currentIndex < 0) {
-                currentIndex = images.length - 1;
-            }
-
-            updateImage();
-        }
-
-        function updateImage() {
-            overlayImage.src = images[currentIndex];
-        }
-
-        // Keyboard Navigation
-        document.addEventListener("keydown", (e) => {
-            if (!overlay.classList.contains("active")) return;
-
-            if (e.key === "Escape") closeOverlay();
-            if (e.key === "ArrowLeft") changeSlide(-1);
-            if (e.key === "ArrowRight") changeSlide(1);
-        });
-
-        // Close on clicking background (optional)
-        overlay.addEventListener("click", (e) => {
-            if (e.target === overlay) {
-                closeOverlay();
-            }
+        document.addEventListener('DOMContentLoaded', () => {
+            new Carousel('.collage-item');
         });
     </script>
 </body>
