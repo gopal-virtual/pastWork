@@ -1,0 +1,203 @@
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --text-muted: #666666;
+    --border: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 680px;
+    /* Increased slightly to accommodate thumbnails */
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+header {
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.about-text {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #333;
+    max-width: 540px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.2s;
+}
+
+.links a:hover {
+    border-color: var(--text);
+}
+
+.resume-link {
+    margin-top: 32px;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--text);
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    opacity: 0.7;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+/* Grid Layout for Items */
+.item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.date {
+    font-size: 14px;
+    color: var(--text-muted);
+    padding-top: 2px;
+}
+
+/* Flex Layout for Content (Image + Text) */
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Thumbnail Styling */
+.project-thumb {
+    width: 100px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+    /* Prevents image from squishing */
+    transition: opacity 0.2s;
+}
+
+.item:hover .project-thumb {
+    opacity: 0.9;
+}
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-col h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.text-col p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    display: block;
+}
+
+footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* anchor */
+a:after {
+    content: " →";
+}
+
+a[target="_blank"]:after {
+    content: " ↗";
+}
+
+@media (max-width: 500px) {
+    .item {
+        grid-template-columns: 1fr;
+        /* Stack Date on top */
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        margin: 40px auto;
+    }
+
+    /* Keep image next to text on mobile for that nice list feel */
+    .content {
+        gap: 16px;
+    }
+
+    .project-thumb {
+        width: 80px;
+        height: 52px;
+    }
+}
