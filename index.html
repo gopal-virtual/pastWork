@@ -8,253 +8,291 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link href="assets/output.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="container">
-        <header>
+<body class="bg-white text-zinc-900 font-sans antialiased selection:bg-zinc-100 selection:text-black">
+    <div class="max-w-2xl mx-auto px-6 py-12 sm:py-20">
+        <header class="mb-16 sm:mb-24 flex flex-col sm:flex-row gap-8 sm:items-start">
             <img src="https://media.licdn.com/dms/image/v2/D5603AQFL4fGz0cAX1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696992537360?e=1769644800&v=beta&t=VuVZcX5-I1T6EYEfBmCKYP6ktlwnMJjt7Xvnfu_JwkE"
-                alt="Gopal Ojha" class="avatar" />
+                alt="Gopal Ojha"
+                class="w-16 h-16 rounded-full object-cover border border-zinc-100 bg-zinc-50 shrink-0" />
 
-            <h1>Gopal Ojha</h1>
-            <p class="tagline">Co-building @ Line And Dots Labs • Mumbai</p>
-            <p class="about-text">
-                Product-minded software leader with 9 years of experience designing
-                scalable, UX-focused applications. Passionate about blending
-                exceptional user experiences with performant, maintainable code.
-            </p>
+            <div class="flex-1 space-y-6">
+                <div class="space-y-2">
+                    <h1 class="text-xl font-semibold tracking-tight">Gopal Ojha</h1>
+                    <p class="text-zinc-500">Co-building @ Line And Dots Labs • Mumbai</p>
+                </div>
 
-            <div class="links">
-                <a href="https://www.linkedin.com/in/gopal-ojha-772a15239/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/gopal-virtual" target="_blank">GitHub</a>
-                <a href="mailto:gopal.ojha.1989@gmail.com">Email</a>
+                <p class="text-zinc-600 leading-relaxed max-w-lg">
+                    Product-minded software leader with 9 years of experience designing
+                    scalable, UX-focused applications. Passionate about blending
+                    exceptional user experiences with performant, maintainable code.
+                </p>
+
+                <div class="flex gap-4 text-sm font-medium flex-wrap">
+                    <a href="https://www.linkedin.com/in/gopal-ojha-772a15239/" target="_blank"
+                        class="hover:underline decoration-zinc-300 underline-offset-4">LinkedIn</a>
+                    <a href="https://github.com/gopal-virtual" target="_blank"
+                        class="hover:underline decoration-zinc-300 underline-offset-4">GitHub</a>
+                    <a href="mailto:gopal.ojha.1989@gmail.com"
+                        class="hover:underline decoration-zinc-300 underline-offset-4">Email</a>
+                    <a href="pages/resume.html"
+                        class="hover:underline decoration-zinc-300 underline-offset-4 text-zinc-900 font-semibold">Resume</a>
+                </div>
             </div>
-
-            <a href="pages/resume.html" class="resume-link">View Full Resume</a>
         </header>
 
-        <section id="projects">
-            <h2>Selected Work</h2>
+        <section id="projects" class="space-y-12">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-8">Selected Work</h2>
 
-            <div class="item">
-                <span class="date">@ Line And Dots Labs</span>
-                <div class="content">
-                    <img src="https://app.statpecker.com/assets/cover-image-BPwZL2Cf.png" alt="StatPecker Thumbnail"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://app.statpecker.com/" style="text-decoration: none; color: inherit"
-                                target="_blank">StatPecker</a>
+            <!-- StatPecker -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Line And Dots</span>
+                <div class="flex gap-6 items-start">
+                    <img src="https://app.statpecker.com/assets/cover-image-BPwZL2Cf.png" alt="StatPecker"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="https://app.statpecker.com/" target="_blank">StatPecker</a>
                         </h3>
-                        <p>To help leaders get fast insights, without data leaks.</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">To help leaders get fast insights, without data
+                            leaks.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Team Project</span>
-                <div class="content">
+            <!-- Sympose -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Team Project</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://placehold.co/200x128/eeeeee/999999?text=Sympose" alt="Sympose"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://app.statpecker.com/"
-                                style="text-decoration: none; color: inherit">Sympose</a>
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="#" class="opacity-50 cursor-not-allowed">Sympose</a>
                         </h3>
-                        <p>Community for brands.</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Community for brands.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Open Source</span>
-                <div class="content">
+            <!-- Relements -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Open Source</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://placehold.co/200x128/eeeeee/999999?text=Relements" alt="Relements"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://www.npmjs.com/package/@haptik/helpers"
-                                style="text-decoration: none; color: inherit" target="_blank">Relements</a>
-                            <p>(aka @haptik/helpers)</p>
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="https://www.npmjs.com/package/@haptik/helpers" target="_blank">Relements</a>
                         </h3>
-                        <p>
-                            A set of highly reusable React components built with zero
-                            dependencies.
-                        </p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">A set of highly reusable React components built
+                            with zero dependencies.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Haptik</span>
-                <div class="content">
+            <!-- Agent Chat -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Haptik</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://placehold.co/200x128/eeeeee/999999?text=AgentChat" alt="Agent Chat"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://www.haptik.ai/products/smart-agent-chat"
-                                style="text-decoration: none; color: inherit" target="_blank">Agent Chat</a>
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="https://www.haptik.ai/products/smart-agent-chat" target="_blank">Agent Chat</a>
                         </h3>
-                        <p>Agent Chat for human assistant</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Agent Chat for human assistant.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Haptik</span>
-                <div class="content">
+            <!-- Athena -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Haptik</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://placehold.co/200x128/eeeeee/999999?text=Relements" alt="Athena"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://www.haptik.ai/products/analytics/"
-                                style="text-decoration: none; color: inherit" target="_blank">Athena</a>
-                            <p>(aka Analytics)</p>
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="https://www.haptik.ai/products/analytics/" target="_blank">Athena</a>
                         </h3>
-                        <p>Analytics platform for bot performance</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Analytics platform for bot performance.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Hackathon</span>
-                <div class="content">
-                    <img src="assets/Splash.png" alt="Bot builder" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_sunday.html" style="text-decoration: none; color: inherit">The Sunday
+            <!-- Sunday App -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Hackathon</span>
+                <div class="flex gap-6 items-start">
+                    <img src="assets/Splash.png" alt="The Sunday App"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_sunday.html">The Sunday
                                 App</a>
                         </h3>
-                        <p>A meme reminder not to over-booze on sunday night.</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">A meme reminder not to over-booze on sunday
+                            night.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Haptik</span>
-                <div class="content">
+            <!-- Mogambo -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Haptik</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://placehold.co/200x128/eeeeee/999999?text=Relements" alt="Bot builder"
-                        class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_mogambo.html" style="text-decoration: none; color: inherit">Mogambo</a>
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_mogambo.html">Mogambo</a>
                         </h3>
-                        <p>A drag-n-drop bot building platform</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">A drag-n-drop bot building platform.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Research</span>
-                <div class="content">
+            <!-- Tangible -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Research</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Ftangible.png?alt=media&token=ca10a8f8-6301-48d0-a1b9-935da6bffcd2"
-                        alt="Tangible" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="project_tangible.html" style="text-decoration: none; color: inherit">Tangible</a>
+                        alt="Tangible"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="project_tangible.html">Tangible</a>
                         </h3>
-                        <p>
-                            An interactive two way learning platform for curators and
-                            learners.
+                        <p class="text-sm text-zinc-500 leading-relaxed">An interactive two way learning platform for
+                            curators and learners.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alex App -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Shipmnts</span>
+                <div class="flex gap-6 items-start">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Falex.png?alt=media&token=5b3314c1-7bb2-4978-8b4e-0b5b54effb53"
+                        alt="Alex"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_alex.html">Alex App</a>
+                        </h3>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Annotation platform for freight documents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class Cloud -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Zaya</span>
+                <div class="flex gap-6 items-start">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Fclasscloud.png?alt=media&token=864011e3-df07-4a56-aa54-19da32797231"
+                        alt="Class Cloud"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_class_cloud.html">Class Cloud</a>
+                        </h3>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Apple Tv for Class rooms in for rural India.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Shipmnts</span>
-                <div class="content">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Falex.png?alt=media&token=5b3314c1-7bb2-4978-8b4e-0b5b54effb53"
-                        alt="Alex" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_alex.html" style="text-decoration: none; color: inherit">Alex App</a>
-                        </h3>
-                        <p>Annotation platform for freight documents</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <span class="date">@ Zaya</span>
-                <div class="content">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Fclasscloud.png?alt=media&token=864011e3-df07-4a56-aa54-19da32797231"
-                        alt="Class cloud" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_class_cloud.html" style="text-decoration: none; color: inherit">Class
-                                Cloud</a>
-                        </h3>
-                        <p>Apple Tv for Class rooms in for rural India</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <span class="date">@ Zaya</span>
-                <div class="content">
+            <!-- English Duniya -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Zaya</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Fenglishduniya.png?alt=media&token=14fb7ec3-cce2-4261-ad46-de0b646bc506"
-                        alt="Class cloud" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="https://www.zaya.org" target="_blank"
-                                style="text-decoration: none; color: inherit">
-                                English Duniya
-                            </a>
+                        alt="English Duniya"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="https://www.zaya.org" target="_blank">English
+                                Duniya</a>
                         </h3>
-                        <p>English learning app for non-native speakers</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">English learning app for non-native speakers.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Hackathon</span>
-                <div class="content">
+            <!-- Quiz Egg -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Hackathon</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Fquizegg.png?alt=media&token=f0d83128-6b34-4d0f-b8c1-54cf6802bd88"
-                        alt="Quiz egg app" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_quiz_egg.html" style="text-decoration: none; color: inherit">Quiz Egg</a>
+                        alt="Quiz Egg"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_quiz_egg.html">Quiz Egg</a>
                         </h3>
-                        <p>Realtime two-player quiz, and poke friends afterwards.</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Realtime two-player quiz, and poke friends
+                            afterwards.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Zaya</span>
-                <div class="content">
+            <!-- Config App -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Zaya</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Fconfig.png?alt=media&token=1bd7fddd-c0cd-435d-a42a-5dcb2417f901"
-                        alt="Config app" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_config.html" style="text-decoration: none; color: inherit">Config App</a>
+                        alt="Config App"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_config.html">Config App</a>
                         </h3>
-                        <p>Plug-n-play setup app of Class cloud router.</p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Plug-n-play setup app of Class cloud router.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">@ Zaya</span>
-                <div class="content">
+            <!-- Learn & Curate -->
+            <div class="group grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-8 items-start">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Zaya</span>
+                <div class="flex gap-6 items-start">
                     <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/cover%2Flearn.png?alt=media&token=3c042ce1-e86a-4e00-a34d-9c388941c33f"
-                        alt="Learn & Curate app" class="project-thumb" />
-                    <div class="text-col">
-                        <h3>
-                            <a href="pages/app_learn_curate.html" style="text-decoration: none; color: inherit">Learn &
+                        alt="Learn & Curate"
+                        class="w-20 h-14 sm:w-24 sm:h-16 rounded-lg border border-zinc-100 object-cover bg-zinc-50 shrink-0" />
+                    <div class="flex flex-col space-y-1">
+                        <h3
+                            class="font-medium text-zinc-900 group-hover:underline underline-offset-4 decoration-zinc-300">
+                            <a href="pages/app_learn_curate.html">Learn &
                                 Curate</a>
                         </h3>
-                        <p>
-                            Optimised for classroom tablet usage. Curate app for learning.
-                        </p>
+                        <p class="text-sm text-zinc-500 leading-relaxed">Optimised for classroom tablet usage. Curate
+                            app for learning.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer>&copy; 2025 Gopal Ojha — Built with simplicity.</footer>
+        <footer class="mt-20 pt-8 border-t border-zinc-100 text-center text-xs text-zinc-400">
+            &copy; 2025 Gopal Ojha — Built with simplicity.
+        </footer>
     </div>
 </body>
 

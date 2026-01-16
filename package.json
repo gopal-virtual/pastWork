@@ -4,10 +4,14 @@
     "description": "Static portfolio site",
     "scripts": {
         "start": "live-server .",
+        "dev:css": "tailwindcss -i ./assets/input.css -o ./assets/output.css --watch",
+        "build:css": "tailwindcss -i ./assets/input.css -o ./assets/output.css --minify",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
-        "live-server": "^1.2.0"
+        "@tailwindcss/cli": "^4.1.18",
+        "live-server": "^1.2.0",
+        "tailwindcss": "^4.1.18"
     },
     "author": "Gopal Ojha",
     "license": "ISC"

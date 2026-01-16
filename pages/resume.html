@@ -9,36 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="stylesheet" href="../assets/pages.css">
-
+    <link href="../assets/output.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="container">
-        <nav>
-            <a href="/" class="back-link">← Back to Portfolio</a>
+<body class="bg-white text-zinc-900 font-sans antialiased selection:bg-zinc-100 selection:text-black">
+    <div class="max-w-2xl mx-auto px-6 py-12 sm:py-20">
+        <nav class="mb-12 sm:mb-20">
+            <a href="../index.html"
+                class="text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors inline-flex items-center gap-1 group">
+                <span class="group-hover:-translate-x-0.5 transition-transform">←</span>
+                Back to Portfolio
+            </a>
         </nav>
 
-        <header>
-            <h1>Gopal Ojha</h1>
-            <p class="role-title">Software Leader & Product Engineer</p>
+        <header class="mb-16">
+            <h1 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-2">Gopal Ojha</h1>
+            <p class="text-lg text-zinc-500">Software Leader & Product Engineer</p>
         </header>
 
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="experience" class="mb-20">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-8 sm:mb-12">Experience</h2>
 
-            <div class="item">
-                <span class="date">Sept 25 — Present</span>
-                <div class="content">
-                    <h3>Line And Dots Labs</h3>
-                    <span class="role">Co-founder</span>
-                    <ul>
-                        <li>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Sept 25 — Present</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Line And Dots Labs</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">Co-founder</span>
+                    <ul class="space-y-3 text-zinc-600 leading-relaxed text-sm sm:text-base">
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Led product research and design for Statpecker, a privacy-first
                             AI platform.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Scaled to 1,200+ users and monetized via self-taught social
                             marketing and end-to-end product roadmap management.
                         </li>
@@ -46,25 +50,29 @@
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Feb 2019 — Dec 2023</span>
-                <div class="content">
-                    <h3>Haptik</h3>
-                    <span class="role">SWE 3 → Tech Lead → Eng. Manager</span>
-                    <ul>
-                        <li>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Feb 2019 — Dec 2023</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Haptik</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">SWE 3 → Tech Lead → Eng. Manager</span>
+                    <ul class="space-y-3 text-zinc-600 leading-relaxed text-sm sm:text-base">
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Rebuilt the Agent Chat platform, cutting support tickets by 30%
                             through focused tech debt optimization.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Scaled team from 2 to 13 members and led frontend for marquee
                             launches like "Superman" & "Wonder Woman".
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Optimized chatbot performance reducing lag to under 5ms and
                             cleared 15% of tech debt every quarter.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Co-built the Component Library and theming system, establishing
                             the foundation for all product UIs.
                         </li>
@@ -72,21 +80,24 @@
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Jun 2017 — Dec 2018</span>
-                <div class="content">
-                    <h3>Shipmnts</h3>
-                    <span class="role">User Experience Lead</span>
-                    <ul>
-                        <li>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Jun 2017 — Dec 2018</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Shipmnts</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">User Experience Lead</span>
+                    <ul class="space-y-3 text-zinc-600 leading-relaxed text-sm sm:text-base">
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Led ground-up product design, collaborating closely with 20+
                             customers.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Developed a Documentation platform for Freight Forwarders in 3
                             months.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Created an internal Annotation platform for the ML team in 1.5
                             months.
                         </li>
@@ -94,17 +105,19 @@
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Aug 2014 — Mar 2017</span>
-                <div class="content">
-                    <h3>Zaya Learning Labs</h3>
-                    <span class="role">SWE → UX Lead Engineer</span>
-                    <ul>
-                        <li>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Aug 2014 — Mar 2017</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Zaya Learning Labs</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">SWE → UX Lead Engineer</span>
+                    <ul class="space-y-3 text-zinc-600 leading-relaxed text-sm sm:text-base">
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Launched <em>English Duniya</em>, scaling to 8.5k active
                             profiles and 2.5M data points in 4 months.
                         </li>
-                        <li>
+                        <li
+                            class="pl-5 relative before:content-['✴'] before:absolute before:left-0 before:text-zinc-300 before:text-xs before:top-1.5">
                             Co-developed <em>ClassCloud</em>, an offline-first learning
                             platform serving 60,000 students across India.
                         </li>
@@ -112,24 +125,24 @@
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Apr 2013 — Jun 2014</span>
-                <div class="content">
-                    <h3>Video Cable Communication</h3>
-                    <span class="role">Consultant</span>
-                    <p>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Apr 2013 — Jun 2014</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Video Cable Communication</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">Consultant</span>
+                    <p class="text-zinc-600 leading-relaxed text-sm sm:text-base">
                         Developed customer billing software for local cable operators,
                         based on TRAI guidelines.
                     </p>
                 </div>
             </div>
 
-            <div class="item">
-                <span class="date">Jun 2012 — Apr 2013</span>
-                <div class="content">
-                    <h3>Telebees Technologies</h3>
-                    <span class="role">Content Designer</span>
-                    <p>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8 mb-12">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">Jun 2012 — Apr 2013</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">Telebees Technologies</h3>
+                    <span class="block text-sm text-zinc-500 mb-4">Content Designer</span>
+                    <p class="text-zinc-600 leading-relaxed text-sm sm:text-base">
                         Hand-coded SVG animations for mobile marketing content across
                         industries.
                     </p>
@@ -137,31 +150,40 @@
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Web & Mobile Technologies</span>
-                <span class="skill-tag">Design</span>
-                <span class="skill-tag">Technical Leadership</span>
-                <span class="skill-tag">Team Management</span>
-                <span class="skill-tag">Project Managment</span>
+        <section id="skills" class="mb-20">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-8 sm:mb-12">Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span
+                    class="bg-zinc-50 border border-zinc-100 text-zinc-600 px-3 py-1.5 rounded text-sm font-medium">Web
+                    & Mobile Technologies</span>
+                <span
+                    class="bg-zinc-50 border border-zinc-100 text-zinc-600 px-3 py-1.5 rounded text-sm font-medium">Design</span>
+                <span
+                    class="bg-zinc-50 border border-zinc-100 text-zinc-600 px-3 py-1.5 rounded text-sm font-medium">Technical
+                    Leadership</span>
+                <span
+                    class="bg-zinc-50 border border-zinc-100 text-zinc-600 px-3 py-1.5 rounded text-sm font-medium">Team
+                    Management</span>
+                <span
+                    class="bg-zinc-50 border border-zinc-100 text-zinc-600 px-3 py-1.5 rounded text-sm font-medium">Project
+                    Managment</span>
             </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="item">
-                <span class="date">BTech</span>
-                <div class="content">
-                    <h3>West Bengal University of Technology</h3>
-                    <p class="role">Computer Science & Engineering</p>
+        <section id="education" class="mb-20">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-8 sm:mb-12">Education</h2>
+            <div class="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-8">
+                <span class="text-sm text-zinc-400 font-medium sm:text-right pt-0.5">BTech</span>
+                <div>
+                    <h3 class="font-medium text-zinc-900 text-base mb-0.5">West Bengal University of Technology</h3>
+                    <p class="text-sm text-zinc-500">Computer Science & Engineering</p>
                 </div>
             </div>
         </section>
 
         <section id="interests">
-            <h2>Beyond Work</h2>
-            <p style="font-size: 14px; color: var(--text-muted)">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-8 sm:mb-12">Beyond Work</h2>
+            <p class="text-zinc-600 leading-relaxed text-sm sm:text-base">
                 When I'm not coding, I'm usually swimming, running, or spending my
                 weekends painting and cooking.
             </p>

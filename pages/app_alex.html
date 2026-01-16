@@ -8,72 +8,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="stylesheet" href="../assets/pages.css">
+    <link href="../assets/output.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="container">
-        <nav>
-            <a href="../index.html" class="back-link">← Gopal Ojha</a>
+<body class="bg-white text-zinc-900 font-sans antialiased selection:bg-zinc-100 selection:text-black">
+    <div class="max-w-2xl mx-auto px-6 py-12 sm:py-20">
+        <nav class="mb-12">
+            <a href="../index.html"
+                class="text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors inline-flex items-center gap-1 group">
+                <span class="group-hover:-translate-x-0.5 transition-transform">←</span>
+                Gopal Ojha
+            </a>
         </nav>
 
-        <header>
-            <h1>Alex</h1>
-            <p class="project-tagline">
+        <header class="mb-12">
+            <h1 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-4">Alex</h1>
+            <p class="text-lg text-zinc-500 leading-relaxed max-w-lg">
                 A platform to train and automate document generation for Logistic Industry.
             </p>
 
-            <div class="meta-grid">
-                <div class="meta-item">
-                    <label>Role</label>
-                    <p>Designed and co-developed</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 border-y border-zinc-100 py-8 my-12">
+                <div>
+                    <span class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1">Role</span>
+                    <span class="text-sm font-medium text-zinc-900">Designed and co-developed</span>
                 </div>
-                <div class="meta-item">
-                    <label>Company</label>
-                    <p>Shipmnts</p>
+                <div>
+                    <span class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1">Company</span>
+                    <span class="text-sm font-medium text-zinc-900">Shipmnts</span>
                 </div>
             </div>
         </header>
 
-        <main>
-            <section class="content-block">
+        <main class="space-y-12">
+            <section class="text-zinc-600 leading-relaxed space-y-6">
                 <p>
                     A platform to train and automate document generation for Logistic Industry. Which eventually reduces
                     human error and make Freight Forwarders more efficient.
                 </p>
                 <p>
-                    <strong>Credit :</strong> Designed and co-developed with @Siddharth, @Vimox
+                    <strong class="font-medium text-zinc-900">Credit :</strong> Designed and co-developed with
+                    @Siddharth, @Vimox
                 </p>
             </section>
 
-            <div class="media-group">
-                <div class="collage-grid">
-                    <div class="collage-item vertical">
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-2 sm:gap-4">
+                    <div
+                        class="collage-item relative aspect-[9/16] overflow-hidden rounded-lg bg-zinc-50 border border-zinc-100 cursor-zoom-in group">
                         <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/alex%2Fdata_traversal.gif?alt=media&token=b0872b79-4061-4d35-b426-3c836c073173"
-                            alt="Alex App Screen 1" />
+                            alt="Alex App Screen 1"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>
-                    <div class="collage-item vertical">
+                    <div
+                        class="collage-item relative aspect-[9/16] overflow-hidden rounded-lg bg-zinc-50 border border-zinc-100 cursor-zoom-in group">
                         <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/alex%2Fannotate.gif?alt=media&token=7452ee0c-dad5-4ce1-ab4d-2d1c0c5e221a"
-                            alt="Alex App Screen 2" />
+                            alt="Alex App Screen 2"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>
-                    <div class="collage-item horizontal">
+                    <div
+                        class="collage-item relative aspect-video col-span-2 overflow-hidden rounded-lg bg-zinc-50 border border-zinc-100 cursor-zoom-in group">
                         <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/alex%2Fannotated_data.gif?alt=media&token=36ffbb0c-028a-4d98-aef4-8ddd2b904a46"
-                            alt="Alex App Screen 3" />
+                            alt="Alex App Screen 3"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>
-                    <div class="collage-item horizontal">
+                    <div
+                        class="collage-item relative aspect-video col-span-2 overflow-hidden rounded-lg bg-zinc-50 border border-zinc-100 cursor-zoom-in group">
                         <img src="https://firebasestorage.googleapis.com/v0/b/colorpallete-8e80c.appspot.com/o/alex%2Fdoc_generation.gif?alt=media&token=3d5eab4e-b146-4938-8408-c82b8a5241a0"
-                            alt="Alex App Screen 4" />
+                            alt="Alex App Screen 4"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>
                 </div>
-                <span class="caption">
+                <p class="text-xs text-center text-zinc-400">
                     Click screenshot to view in full screen.
-                </span>
+                </p>
             </div>
         </main>
 
-        <footer>
-            <a href="../index.html" class="back-link">Return to Portfolio</a>
+        <footer class="mt-20 pt-8 border-t border-zinc-100 text-center">
+            <a href="../index.html"
+                class="text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors">Return to Portfolio</a>
         </footer>
     </div>
 
