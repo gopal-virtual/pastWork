@@ -11,6 +11,7 @@
     "devDependencies": {
         "@tailwindcss/cli": "^4.1.18",
         "live-server": "^1.2.0",
+        "sharp": "^0.34.5",
         "tailwindcss": "^4.1.18"
     },
     "author": "Gopal Ojha",
