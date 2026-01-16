@@ -3,3 +3,10 @@
 @theme {
     --font-sans: "Inter", sans-serif;
 }
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
